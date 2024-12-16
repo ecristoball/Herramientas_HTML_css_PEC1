@@ -491,7 +491,7 @@ section {
   height: 40vh; /* Reduce la altura en pantallas más pequeñas */
 }
 .head1 .logoheader{
-  max-width: 70%;
+  max-width: 80%;
 }
 .head2{
   font-size: 1.5rem;
@@ -632,7 +632,7 @@ section {
   max-width: 40%;
 }
 .head1 .logoheader{
-  max-width: 60%;
+  max-width: 80%;
 }
 .footer-container {
   display: flex;

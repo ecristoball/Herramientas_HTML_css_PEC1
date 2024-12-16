@@ -20,7 +20,7 @@ header {
   align-items: center; /* Alinea verticalmente los elementos */
 }
 
-.logoheader svg {
+.logoheader img {
   width: 100%; /* Ajusta el ancho al contenedor */
   height: auto; /* Mantiene las proporciones */
   display: block; 
@@ -55,8 +55,8 @@ footer {
   align-items: center; /* Alinea verticalmente los elementos */
 }
 .foot1 .logoheader {
-  width: 100%; /* El contenedor ocupa el 100% de su contenedor padre */
-  max-width: 300px;  
+   /* El contenedor ocupa el 100% de su contenedor padre */
+  max-width: 30%;  
 }
 .foot2 ul,.foot3 ul {
   text-align: center;
@@ -385,7 +385,7 @@ h2 {
   padding-bottom: 40px;
 }
 .head1 .logoheader{
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .foot1, .foot2, .foot3 {
@@ -398,8 +398,8 @@ h2 {
   text-align: center;
 }
 .foot1 .logoheader {
-  max-width: 30%;
-  border: 5px solid rgb(0, 255, 21);
+  max-width: 50%;
+ 
 }
 .foot1-1{
   text-align: left;
@@ -510,8 +510,8 @@ section {
   text-align: center;
 }
 .foot1 .logoheader {
-  max-width: 30%;
-  border: 5px solid rgb(0, 255, 21);
+  max-width: 60%;
+  
 }
 .foot1-1{
   text-align: left;
@@ -641,7 +641,7 @@ section {
   align-items: center; /* Alinea verticalmente los elementos */
 }
 .foot1 .logoheader {
-  max-width: 30%;
+  max-width: 50%;
   border: 5px solid rgb(255, 0, 157);
   align-items: center;
   margin: 0 auto;

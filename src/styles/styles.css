@@ -13,63 +13,56 @@ header {
   margin: 0;
   font-family:'Lato', 'Noto Serif',  'sans-serif';
   display: flex;
+  margin:0;
+  
   background-color: rgb(7, 0, 74);
+  justify-content: start; /* Distribuye los elementos */
+  align-items: center; /* Alinea verticalmente los elementos */
 }
-header nav {
-  display: inline-block;
-  padding: 10px;
-  margin-top:0px;
-  width: 100%;
-  text-align: left center;
+
+.logoheader svg {
+  width: 100%; /* Ajusta el ancho al contenedor */
+  height: auto; /* Mantiene las proporciones */
+  display: block; 
 }
-header ul {
-  text-align: right;
-  list-style-type: none;
-  margin-bottom: 5px;
-}
-header li{
-display: inline-block;
-margin-left:5px;
-}
-header li a{
+.head2, .head1{
   color:white;
+  border: 5px solid rgb(0, 255, 21);
 }
-.logoheader img {
-  width: 75%;
+
+.head2{
+  font-size: 2rem;
+  align-items: left;
+  text-align: left;
+  margin:20px;
 }
+
 
 footer {
   margin: 0;
   margin-top: 0;
   padding-top: 0;
-  
   font-family:'Lato', 'Noto Serif',  'sans-serif';
   font-size: 0.75rem;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: right;
-  display: flex;
   color : rgb(255,255,255);
   background-color: rgb(7, 0, 74);
   flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si es necesario */
 }
-
-footer ul {
-text-align: right;
-list-style-type: none;
-margin-bottom: 5px;
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos */
+  align-items: center; /* Alinea verticalmente los elementos */
 }
-footer .logofooter img {
-  max-width: 40%;
-  height: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
-
-  }
-
-  footer nav ul li a {
-    color: white; 
-  }
+.foot1 .logoheader {
+  width: 100%; /* El contenedor ocupa el 100% de su contenedor padre */
+  max-width: 300px;  
+}
+.foot2 ul,.foot3 ul {
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 5px;
+}
 
 
 .container-enl{
@@ -78,9 +71,7 @@ footer .logofooter img {
 }
 .container-enl ul li {
   margin-bottom: 15px; 
-
 }
-
 .container-enl ul ul li {
   margin-bottom: 8px; 
 }
@@ -260,8 +251,6 @@ figcaption {
   height: 100%;
 }
 
-
-
 /* h1, h2...*/
 
 h1 {
@@ -276,6 +265,85 @@ h2 {
 .subcontainer-press1 figcaption{
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*****************CONSULTAS A LOS MEDIOS***********/
 /****************************************************/
 
@@ -316,52 +384,61 @@ h2 {
   padding-left: 0px;
   padding-bottom: 40px;
 }
-
-.foot2 {
-  display: flex;
-  justify-content: space-between; /* Distribuye el espacio entre los elementos */
-  align-items: center; /* Alinea verticalmente al centro */
-}
-footer .foot1 {
-  flex-basis: 20%; /* Ocupa el 25% del ancho del contenedor */
- 
+.head1 .logoheader{
+  max-width: 80%;
 }
 
-footer .foot2  {
-
-  flex-basis: 50%; /* Ocupa el 7% del ancho del contenedor */
-  text-align: left; /* Alineación a la derecha del contenido del nav */
+.foot1, .foot2, .foot3 {
+  padding: 10px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  border: 5px solid rgb(0, 255, 21);
 }
-footer nav ul li {
-  display: block;
-  width: 100%;
+.foot1 {
+  flex-basis: 25%; /* Ocupa el 25% */
   text-align: center;
-  margin-left: 0;
-  padding-left: 0;
 }
-footer ul {
-  text-align: right;
-  list-style-type: none;
-  margin-left: 0;
-  margin-bottom: 5px;
-  
-  padding-left: 0px;
+.foot1 .logoheader {
+  max-width: 30%;
+  border: 5px solid rgb(0, 255, 21);
+}
+.foot1-1{
+  text-align: left;
+}
+.foot2 {
+  flex-basis: 25%; /* Ocupa el 25%*/
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    
+}
+.foot3 {
+  flex-basis: 50%; /* Ocupa el 50%*/
 }
 
-.foot2 .redessociales ul,
-.foot2 nav ul {
+.foot3 nav ul li{
+  display: inline-block;
+  margin-left:20px;
+}
+.foot3 nav ul li a {
+    color:rgb(7, 0, 74);;
+    background-color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding:10px;
+    border-radius: 5px; 
+}
+
+.foot3 nav ul li a:hover {
+  color: #fff; /* Cambia el color del texto al pasar el mouse */
+  background-color: #007BFF; /* Fondo azul al pasar el mouse */
+  border-radius: 5px; /* Bordes redondeados opcionales */
+}
+
+.foot2 .redessociales ul{
   display: flex;
-  gap: 20px; /* Espacio entre los elementos de cada lista */
-  list-style: none; /* Quita los puntos de las listas */
-  padding: 0; /* Elimina el relleno de la lista */
-  margin: 0; /* Elimina el margen de la lista */
+  gap: 30px; 
+  border: 5px solid rgb(0, 255, 21);
 }
-.redessociales ul {
-  display: flex;
-}
-.logofooter img {
-  width: 30%;
-}
+
 .container-detalle{
   display: grid;
     grid-template-columns: 1fr 2fr 1fr; /* Columna central es el doble de ancha */
@@ -413,57 +490,70 @@ section {
 #map {
   height: 40vh; /* Reduce la altura en pantallas más pequeñas */
 }
-
-footer {
-    text-align: center;
-    font-size: 0.75rem;  
+.head1 .logoheader{
+  max-width: 70%;
+}
+.head2{
+  font-size: 1.5rem;
+  align-items: left;
+  text-align: left;
+  margin:20px;
 }
 
-footer nav ul li {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-left: 0;
-    padding-left: 0;
+.foot1, .foot2, .foot3 {
+  padding: 10px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  border: 5px solid rgb(0, 255, 21);
 }
-footer ul {
-
-    text-align: right;
-    list-style-type: none;
-    margin-left: 0;
-    margin-bottom: 5px;
-    border: 2px solid rgb(0, 255, 21);
-    padding-left: 0px;
+.foot1 {
+  flex-basis: 25%; /* Ocupa el 25% */
+  text-align: center;
 }
-
-
+.foot1 .logoheader {
+  max-width: 30%;
+  border: 5px solid rgb(0, 255, 21);
+}
+.foot1-1{
+  text-align: left;
+}
 .foot2 {
-    display: flex;
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
-    align-items: center; /* Alinea verticalmente al centro */
+  flex-basis: 25%; /* Ocupa el 25%*/
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    
+}
+.foot3 {
+  flex-basis: 50%; /* Ocupa el 50%*/
 }
 
-.foot2 .redessociales ul,
-.foot2 nav ul {
-    display: flex;
-    gap: 20px; /* Espacio entre los elementos de cada lista */
-    list-style: none; /* Quita los puntos de las listas */
-    padding: 0; /* Elimina el relleno de la lista */
-    margin: 0; /* Elimina el margen de la lista */
+.foot3 nav ul li{
+  display: inline-block;
+  margin-left:20px;
 }
-.redessociales ul {
-    display: flex;
+.foot3 nav ul li a {
+    color:rgb(7, 0, 74);;
+    background-color: white;
+    font-size: 0.85rem;
+    text-decoration: none;
+    padding:7px;
+    border-radius: 5px; 
 }
-footer ul {
-    text-align: center;
-    list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
+
+.foot3 nav ul li a:hover {
+  color: #fff; /* Cambia el color del texto al pasar el mouse */
+  background-color: #007BFF; /* Fondo azul al pasar el mouse */
+  border-radius: 5px; /* Bordes redondeados opcionales */
 }
-.logofooter img {
-    width: 30%;
+
+.foot2 .redessociales ul{
+  display: flex;
+  gap: 30px; 
+  border: 5px solid rgb(0, 255, 21);
 }
+
+
+
+
 
 .container-index {
     width: 95%;
@@ -514,7 +604,12 @@ footer ul {
 }
 
 
-/*movil*/
+
+
+
+
+
+/****************movil******************/
 @media only screen and (max-width: 767px) {
   html {
     font-size: 14px;
@@ -529,40 +624,79 @@ footer ul {
 }
 
 
-header {
-    font-size: 0.75rem;
+.head2 {
+    font-size: 1rem;
+
+}
+.head1{
+  max-width: 40%;
+}
+.head1 .logoheader{
+  max-width: 60%;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye los elementos */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+.foot1 .logoheader {
+  max-width: 30%;
+  border: 5px solid rgb(0, 255, 21);
+  align-items: center;
+}
+.foot1-1{
+  text-align: center;
+}
+.foot1, .foot2, .foot3 {
+  padding: 10px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  display: flex; /* Activar Flexbox */
+  flex-direction: column; /* Alinear los elementos en columna */
+  align-items: center; /* Centrar horizontalmente los <li> */
 }
 
-  footer {
-    text-align: center;
-    font-size: 0.75rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-  }
-  footer ul {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left:0;
-  }
-  footer nav ul li {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-left: 0;
-    padding-left:0; 
-  }
-  .redessociales ul li {
-      display: flex;
-      justify-content: center;
-  }
-  .logofooter img {
-    width:8%;
-  }
-  .foot1, .foot2 {
-    margin: 10px 0; /* Add spacing between the stacked items */
-  }
+.foot2 .redessociales ul{
+  display: flex;
+  gap: 30px; 
+}
+.foot3 nav ul {
+  list-style: none; /* Quitar los puntos de lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Activar Flexbox */
+  flex-direction: column; /* Alinear los elementos en columna */
+  align-items: center; /* Centrar horizontalmente los <li> */
+  gap: 5px; /* Espaciado entre los elementos */
+}
+.foot3 nav ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-left:0; 
+  margin:5px;
+}
+
+.foot3 nav ul li a {
+  color:rgb(7, 0, 74);;
+  background-color: white;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 5px;
+  margin:5px;
+  text-align: center;
+ 
+} 
+.foot3 nav ul li a:hover {
+  color: #fff; /* Cambia el color del texto al pasar el mouse */
+  background-color: #007BFF; /* Fondo azul al pasar el mouse */
+  border-radius: 0px; /* Bordes redondeados opcionales */
+}
+  
+ 
+
+
+
 .container-cat {
   display: grid;
   grid-template-columns: 1fr ;

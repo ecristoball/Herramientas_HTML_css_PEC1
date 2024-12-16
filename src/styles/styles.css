@@ -642,8 +642,9 @@ section {
 }
 .foot1 .logoheader {
   max-width: 30%;
-  border: 5px solid rgb(0, 255, 21);
+  border: 5px solid rgb(255, 0, 157);
   align-items: center;
+  margin: 0 auto;
 }
 .foot1-1{
   text-align: center;

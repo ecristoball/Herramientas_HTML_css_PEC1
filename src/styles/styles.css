@@ -27,7 +27,7 @@ header {
 }
 .head2, .head1{
   color:white;
-  border: 5px solid rgb(0, 255, 21);
+ 
 }
 
 .head2{
@@ -391,7 +391,7 @@ h2 {
 .foot1, .foot2, .foot3 {
   padding: 10px;
   box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
-  border: 5px solid rgb(0, 255, 21);
+
 }
 .foot1 {
   flex-basis: 25%; /* Ocupa el 25% */

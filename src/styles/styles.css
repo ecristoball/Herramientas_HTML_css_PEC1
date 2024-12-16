@@ -338,7 +338,43 @@ h2 {
 
 
 
+.container-detalle{
+  display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Columna central es el doble de ancha */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+.container-detalle h1 {
+  grid-column: 1 / -1; 
+  text-align: center;
+  padding-bottom: 20px;
+}
 
+.columna-lateral img {
+  width: 100%;      /* La imagen ocupa el 100% del ancho de la columna */
+  height: auto;     /* Mantiene la proporción original de la imagen */
+  max-width: 100%;  /* Evita que la imagen se desborde */
+  display: block;   /* Evita espacios no deseados debajo de la imagen */
+}
+.imagen-detalle {
+  grid-column: 1 / -1; /* Asegura que la imagen ocupe toda la fila */
+  width: 100%;          /* La imagen ocupa todo el ancho del contenedor */
+  height: auto;         /* Mantiene la proporción original de la imagen */
+  margin-bottom: 20px;  /* Espaciado debajo de la imagen */
+}
+.container-detalle .imagen-detalle img {
+  width: 100%;
+  height: auto; /* Mantiene las proporciones de la imagen */
+  display: block; /* Elimina el espacio inferior causado por la línea base */
+  margin-bottom: 1rem; 
+}
+
+.container-detalle .imagen-detalle {
+  margin: 1rem 0; 
+}
 
 
 
@@ -405,13 +441,13 @@ h2 {
   text-align: left;
 }
 .foot2 {
-  flex-basis: 25%; /* Ocupa el 25%*/
+  flex-basis: 20%; /* Ocupa el 25%*/
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra horizontalmente */ 
   align-items: center;    
 }
 .foot3 {
-  flex-basis: 50%; /* Ocupa el 50%*/
+  flex-basis: 55%; /* Ocupa el 50%*/
 }
 
 .foot3 nav ul li{
@@ -439,27 +475,7 @@ h2 {
   border: 5px solid rgb(0, 255, 21);
 }
 
-.container-detalle{
-  display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* Columna central es el doble de ancha */
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-.container-detalle h1 {
-  grid-column: 1 / -1; 
-  text-align: center;
-  padding-bottom: 20px;
-}
 
-.columna-lateral img {
-  width: 100%;      /* La imagen ocupa el 100% del ancho de la columna */
-  height: auto;     /* Mantiene la proporción original de la imagen */
-  max-width: 100%;  /* Evita que la imagen se desborde */
-  display: block;   /* Evita espacios no deseados debajo de la imagen */
-}
 
 /*
 section {

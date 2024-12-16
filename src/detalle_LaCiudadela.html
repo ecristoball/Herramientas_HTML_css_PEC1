@@ -14,6 +14,16 @@
     <main>
     <div class="container-detalle">
         <h1>La Ciudadela de Pamplona</h1>
+        <picture class="imagen-detalle">
+            <!-- Imagen para pantallas grandes -->
+            <source srcset="./images/ciudadela_grande.jpg" media="(min-width: 1023px)">
+            <!-- Imagen para pantallas medianas -->
+            <source srcset="./images/ciudadela_mediana.jpg" media="(min-width: 768px)">
+            <!-- Imagen para pantallas pequeñas -->
+            <source srcset="./images/ciudadela_mpequeña.jpg" media="(max-width: 767px)">
+            <!-- Imagen predeterminada -->
+            <img src="./images/ciudadela_mpequeña.jpg" alt="Vista de la Ciudadela de Pamplona" />
+        </picture>
         <aside class="columna-lateral">
             <h2>Imágenes de la Ciudadela</h2>
             <figure>

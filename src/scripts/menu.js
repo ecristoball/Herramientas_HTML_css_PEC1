@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const linkHref = link.getAttribute('href');
                 console.log('Comprobando enlace:', linkHref);
                 console.log(`Comparando: ${linkHref} con ${currentPage}`);
-                if (linkHref.replace('/', '') === currentPage) {
+                if (
+                    (linkHref === '/' && currentPage === 'index.html') || 
+                    linkHref.replace('/', '') === currentPage
+                ) {
                     console.log(`Ocultando enlace: ${linkHref}`);
                     link.style.display = 'none';
                 }

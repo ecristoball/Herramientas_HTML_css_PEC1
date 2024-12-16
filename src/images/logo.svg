@@ -1,0 +1,36 @@
+<svg width="250" height="200" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 250 200" 
+                preserveAspectRatio="xMidYMid meet">
+                <path d="M 40 50 
+                    C 60 40, 60 39, 60 20
+                    C 30 40, 35 39, 40 50
+                    C 30 70, 50 70, 25 80
+                    C 30 50, 45 50, 40 50
+                    C 110 70, 140 70, 180 50 
+                    C 150 40, 100 40, 40 50 
+                    C 120 60, 170 60, 180 50 
+                    C 150 170, 111 175, 110 200 
+                    Z" 
+                    fill="red" 
+                    stroke="black" 
+                    stroke-width="2" />
+                <ellipse cx="40" cy="50" rx="12" ry="9" fill="red" stroke="black" stroke-width="1"  transform="rotate(135 40 50)"/>
+                <path d="M 95 145 
+                    C 95 100, 115 100, 115 100
+                    C 115 100, 135 100, 135 145
+                    Z"
+                    fill="red" 
+                    stroke="black" 
+                    stroke-width="1" />
+                <polygon points="105,85 115,70 125,85 115,100" 
+                    fill="red" 
+                    stroke="black" 
+                    stroke-width="1" />
+                <circle cx="115" cy="100" r="5" fill="red" 
+                    stroke="black" stroke-width="1" />
+                <path d="M 130 90
+                    L 115 140"
+                    fill="red" 
+                    stroke="black" 
+                    stroke-width="1" />
+            </svg>

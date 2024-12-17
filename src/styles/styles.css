@@ -430,7 +430,7 @@ h2 {
 
 }
 .foot1 {
-  flex-basis: 25%; /* Ocupa el 25% */
+  flex-basis: 20%; /* Ocupa el 20% */
   text-align: center;
 }
 .foot1 .logoheader {
@@ -441,13 +441,13 @@ h2 {
   text-align: left;
 }
 .foot2 {
-  flex-basis: 20%; /* Ocupa el 25%*/
+  flex-basis: 15%; /* Ocupa el 15%*/
   display: flex;
   justify-content: center; /* Centra horizontalmente */ 
   align-items: center;    
 }
 .foot3 {
-  flex-basis: 55%; /* Ocupa el 50%*/
+  flex-basis: 65%; /* Ocupa el 50%*/
 }
 
 .foot3 nav ul li{
@@ -522,7 +522,7 @@ section {
   border: 5px solid rgb(0, 255, 21);
 }
 .foot1 {
-  flex-basis: 25%; /* Ocupa el 25% */
+  flex-basis: 20%; /* Ocupa el 20% */
   text-align: center;
 }
 .foot1 .logoheader {
@@ -533,13 +533,13 @@ section {
   text-align: left;
 }
 .foot2 {
-  flex-basis: 25%; /* Ocupa el 25%*/
+  flex-basis: 10%; /* Ocupa el 15%*/
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center;    
 }
 .foot3 {
-  flex-basis: 50%; /* Ocupa el 50%*/
+  flex-basis: 70%; /* Ocupa el 50%*/
 }
 
 .foot3 nav ul li{

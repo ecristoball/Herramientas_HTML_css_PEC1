@@ -494,6 +494,54 @@ section {
 }
 
 
+.animated-path {
+  animation: moveToPoint 4s ease infinite, fadeOut 4s ease infinite;
+  animation-delay: 0s; 
+ 
+}
+
+
+@keyframes moveToPoint {
+  0% {
+      transform: translate(0, 0);
+      opacity: 1;
+  }
+  80% {
+    transform: translate(100px, -180px);
+      opacity: 1;
+  }
+  100% {
+    transform: translate(100px, -180px);
+      opacity: 0;
+  }
+}
+
+
+/* Hace aparecer los puntos */
+.explosion-circle {
+  opacity: 0; /* Inicialmente invisibles */
+  animation: explode 3700ms ease infinite;
+  
+  animation-delay: 3700ms; /* Sincronizado con el fin del movimiento */
+  transform-origin: center;
+}
+
+@keyframes explode {
+  0% {
+      opacity: 0; /* Inicialmente invisibles */
+      transform: translate(0, 0);
+  }
+  20% {
+      opacity: 1; /* Aparecen */
+  }
+  100% {
+      transform: translate(
+          calc(50px * cos(var(--angle))),
+          calc(50px * sin(var(--angle)))
+      );
+      opacity: 0; /* Se desvanecen */
+  }
+}
 
 
 

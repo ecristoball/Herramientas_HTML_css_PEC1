@@ -144,7 +144,7 @@ position: relative;
 .subcontainer-cat1 figcaption, .subcontainer-press1 figcaption{
 font-size: 0.7rem;
 text-align: left;
-color:rgb(158, 157, 171)
+color:rgb(10, 10, 10)
 }
 .subcontainer-cat1-texto, .apartado2, .subcontainer-press1 {  
 padding-bottom: 10px;
@@ -152,8 +152,7 @@ padding-bottom: 10px;
 
 figure {
 margin:0;
-width:80%;
-
+width:100%;
 }
 .map-container{
 margin-left: 10%;
@@ -186,9 +185,12 @@ main{
   overflow: hidden; /* Asegura que no haya desbordamiento */
   
 }
-
+figure {
+  margin:0;
+  width:100%;
+  }
 .imagen-views svg {
-  width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+  width: 80%; /* Imagen ocupa todo el ancho del contenedor */
   height: auto; /* La altura de la imagen se adapta al contenedor */
   object-fit: contain; /* La imagen se ajusta sin recortarse */
   display: block;
@@ -199,7 +201,7 @@ main{
 figcaption {
   text-align: center;
   font-size: 1rem;
-  color: #555;
+  color: #040675;
   padding: 0.5rem;
 }
 
@@ -246,7 +248,7 @@ figcaption {
   width:80%;
   margin:auto;
 }
-.video-container iframe {
+.video-container iframe , .video-container svg{
   position: absolute;
   top: 0;
   left: 0;
@@ -265,80 +267,31 @@ h2 {
   
 }
 
+
 .subcontainer-press1 figcaption{
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Definición de  animaciones */
+
+.blinking-text {
+  animation: blink 2s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0; /* El texto desaparece */
+  }
+}
+
+@keyframes fade-in-out {
+  0%{ opacity: 0; }
+  50%, 100% { opacity: 1; }
+}
+
+.imagen-video {
+  animation: fade-in-out 4s ease-in;
+}
 
 
 .container-detalle{
@@ -475,7 +428,6 @@ h2 {
 .foot2 .redessociales ul{
   display: flex;
   gap: 30px; 
-  border: 5px solid rgb(0, 255, 21);
 }
 
 
@@ -570,7 +522,6 @@ section {
 .foot1, .foot2, .foot3 {
   padding: 10px;
   box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
-  border: 5px solid rgb(0, 255, 21);
 }
 .foot1 {
   flex-basis: 20%; /* Ocupa el 20% */
@@ -587,12 +538,15 @@ section {
   flex-basis: 10%; /* Ocupa el 15%*/
   display: flex;
   justify-content: center; /* Centra horizontalmente */
-  align-items: center;    
+  align-items: center;  
+  
 }
 .foot3 {
   flex-basis: 70%; /* Ocupa el 50%*/
 }
-
+.foot3 nav ul {
+padding-left:0px;
+}  
 .foot3 nav ul li{
   display: inline-block;
   margin-left:20px;
@@ -614,8 +568,8 @@ section {
 
 .foot2 .redessociales ul{
   display: flex;
-  gap: 30px; 
-  border: 5px solid rgb(0, 255, 21);
+  gap: 1px; 
+  padding-left:0px;  
 }
 
 
@@ -709,7 +663,6 @@ section {
 }
 .foot1 .logoheader {
   max-width: 50%;
-  border: 5px solid rgb(255, 0, 157);
   align-items: center;
   margin: 0 auto;
 }

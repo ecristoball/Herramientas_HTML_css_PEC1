@@ -12,7 +12,7 @@
 <body>
   <include src="./components/header.html"></include>
   <main>
-    <h1>Descubre la belleza de Pamplona</h1>
+    <h1 class="blinking-text">Descubre la belleza de Pamplona</h1>
     
     <figure>
       <div class="imagen-views">
@@ -26,10 +26,21 @@
               M275 150   L350 100   L350 160   
               M75 165  L75 325 Q195 450 350 325 L350 165   
               Z
-            " />
+            "
+             />
             </clipPath>
           </defs>
-        
+          
+          <path d="
+          M75 160   L75 100   L170 150   
+          M150 150  L225 100  L300 150  
+          M275 150   L350 100   L350 160   
+          M75 165  L75 325 Q195 450 350 325 L350 165   
+          Z
+        "
+        fill="none"
+        stroke="gold"
+        stroke-width="2" />
           <!-- Imagen a recortar -->
           <image 
             href="./images/pamplona_view.jpg" 
@@ -42,41 +53,112 @@
               cy="185"  
               r="12"    
               fill="none" 
-              stroke="white" 
+              stroke="gold" 
               stroke-width="3" 
+          />
+          <line 
+            x1="105" y1="185" 
+            x2="205" y2="185" 
+            stroke="gold" 
+            stroke-width="2"
           />
           <circle 
           cx="215"  
           cy="185"  
           r="12"    
           fill="none" 
-          stroke="white" 
+          stroke="gold" 
           stroke-width="3" 
-      />
+        />
+        <line 
+            x1="315" y1="185" 
+            x2="225" y2="185" 
+            stroke="gold" 
+            stroke-width="2"
+          />
       <circle 
           cx="325"  
           cy="185"  
           r="12"    
           fill="none" 
-          stroke="white" 
+          stroke="gold" 
           stroke-width="3" 
       />
-      
-          <circle 
+      <line 
+            x1="95" y1="195" 
+            x2="95" y2="260" 
+            stroke="gold" 
+            stroke-width="2"
+          />
+      <circle 
           cx="95"  
           cy="270"  
           r="12"    
           fill="none" 
-          stroke="white" 
+          stroke="gold" 
           stroke-width="3" 
       />
+      <line 
+            x1="325" y1="195" 
+            x2="325" y2="260" 
+            stroke="gold" 
+            stroke-width="2"
+          />
       <circle 
       cx="325"  
       cy="270"  
       r="12"    
       fill="none" 
-      stroke="white" 
+      stroke="gold" 
       stroke-width="3" 
+      />
+      <line 
+            x1="98" y1="283" 
+            x2="115" y2="340" 
+            stroke="gold" 
+            stroke-width="2"
+          />
+      <line 
+          x1="125" y1="352" 
+          x2="203" y2="372" 
+          stroke="gold" 
+          stroke-width="2"
+        />
+        <line 
+          x1="225" y1="372" 
+          x2="285" y2="352" 
+          stroke="gold" 
+          stroke-width="2"
+        />
+        <line 
+          x1="300" y1="338" 
+          x2="325" y2="282" 
+          stroke="gold" 
+          stroke-width="2"
+        />
+      <circle 
+          cx="120"  
+          cy="345"  
+          r="12"    
+          fill="none" 
+          stroke="gold" 
+          stroke-width="3" 
+      />
+      <circle 
+          cx="295"  
+          cy="345"  
+          r="12"    
+          fill="none" 
+          stroke="gold" 
+          stroke-width="3" 
+      />
+      <circle 
+          cx="215"  
+          cy="370"  
+          r="12"    
+          fill="none" 
+          stroke="gold" 
+          stroke-width="3" 
       />
         </svg>
         

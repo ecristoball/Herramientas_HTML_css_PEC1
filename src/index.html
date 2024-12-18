@@ -13,18 +13,73 @@
   <include src="./components/header.html"></include>
   <main>
     <h1>Descubre la belleza de Pamplona</h1>
-    <div class="menu_ppal">
-      <nav>
-        <ul>
-            <li><a href="categoria.html">Categoría</a></li>
-            <li><a href="presentacion.html">Presentación</a></li>
-            <li><a href="enlaces.html">Enlaces</a></li>
-        </ul>
-      </nav>
-    </div>
+    
     <figure>
       <div class="imagen-views">
-          <img src="./images/pamplona_view.jpg" alt="Vista aérea del casco viejo de Pamplona">
+        <svg viewBox="0 100 400 300"  xmlns="http://www.w3.org/2000/svg">
+          <!-- Definición del clipPath -->
+          <defs>
+            <clipPath id="clipCustomShape">
+              <path d="
+              M75 160   L75 100   L170 150   
+              M150 150  L225 100  L300 150  
+              M275 150   L350 100   L350 160   
+              M75 165  L75 325 Q195 450 350 325 L350 165   
+              Z
+            " />
+            </clipPath>
+          </defs>
+        
+          <!-- Imagen a recortar -->
+          <image 
+            href="./images/pamplona_view.jpg" 
+            width="500" 
+            height="500" 
+            clip-path="url(#clipCustomShape)" 
+          />
+          <circle 
+              cx="95"  
+              cy="185"  
+              r="12"    
+              fill="none" 
+              stroke="white" 
+              stroke-width="3" 
+          />
+          <circle 
+          cx="215"  
+          cy="185"  
+          r="12"    
+          fill="none" 
+          stroke="white" 
+          stroke-width="3" 
+      />
+      <circle 
+          cx="325"  
+          cy="185"  
+          r="12"    
+          fill="none" 
+          stroke="white" 
+          stroke-width="3" 
+      />
+      
+          <circle 
+          cx="95"  
+          cy="270"  
+          r="12"    
+          fill="none" 
+          stroke="white" 
+          stroke-width="3" 
+      />
+      <circle 
+      cx="325"  
+      cy="270"  
+      r="12"    
+      fill="none" 
+      stroke="white" 
+      stroke-width="3" 
+      />
+        </svg>
+        
           <figcaption>Vista aérea del casco viejo de Pamplona</figcaption>
       </div>
     </figure>

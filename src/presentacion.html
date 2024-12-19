@@ -23,12 +23,14 @@
                     <div class ="carrusel" id="carrusel1"> 
                         <figure>
                             <div class="carrusel-images">
-                                <img src="./images/ciudadela.jpg" alt="La ciudadela vista aérea">
-                                <img src="./images/ciudadela2.jpg" alt="Jardines de La ciudadela ">
-                                <img src="./images/ciudadela3.jpg" alt="Fosos de La ciudadela">
+                       
+                                <img 
+                                        src="./images/ciudadela_mediana.jpg" 
+                                        srcset="./images/ciudadela_mpequeña.jpg 566w, ./images/ciudadela_mediana.jpg 944w, ./images/ciudadela_grande.jpg 1888w" 
+                                        sizes="(max-width: 768px) 100vw, 50vw" 
+                                        alt="Vista de la ciudadela">
                             </div>
-                            <button class="carrusel-button prev" onclick="prevImage('carrusel1')">⬅️</button>
-                            <button class="carrusel-button next" onclick="nextImage('carrusel1')">➡️</button>
+                           
                             <figcaption>Vista aérea de la Ciudadela</figcaption>
                         </figure>
                     </div>
@@ -90,18 +92,18 @@
                                     C 110 335, 120 325, 135 325
                                     C 155 325, 160 355, 160 375
                                     Z"
-                                    fill="yellow" 
+                                    fill="brown" 
                                     stroke="black" 
-                                    stroke-width="1" 
+                                    stroke-width="2" 
                                 />
                                     <rect 
                                     x="65"          
                                     y="335"          
                                     width="20"     
                                     height="40"     
-                                    fill="red" 
-                                    stroke="blue"   
-                                    stroke-width="2"
+                                    fill="brown" 
+                                    stroke="black"   
+                                    stroke-width="1"
                                     rx="15"          
                                     ry="0"          
                                     />
@@ -111,31 +113,22 @@
                                     width="20"     
                                     height="40"     
                                     fill="brown" 
-                                    stroke="red"   
-                                    stroke-width="2"
+                                    stroke="black"   
+                                    stroke-width="1"
                                     rx="15"          
                                     ry="0"          
                                     />
+                                    
                                 <!--parte media --> 
-                                <rect 
-                                    x="45"          
-                                    y="280"          
-                                    width="180"     
-                                    height="25"     
-                                    fill="pink" 
-                                    stroke="blue"   
-                                    stroke-width="4"
-                                    rx="15"          
-                                    ry="15"          
-                                />
+                                
                                 <rect 
                                     x="185"          
                                     y="265"          
                                     width="20"     
                                     height="40"     
                                     fill="brown" 
-                                    stroke="orange"   
-                                    stroke-width="2"
+                                    stroke="black"   
+                                    stroke-width="1"
                                     rx="15"          
                                     ry="0"/>
                                 <rect 
@@ -144,52 +137,58 @@
                                     width="20"     
                                     height="40"     
                                     fill="brown" 
-                                    stroke="blue"   
-                                    stroke-width="2"
+                                    stroke="black"   
+                                    stroke-width="1"
                                     rx="15"          
                                     ry="0"/>
-                                    <rect 
+                                <rect 
                                     x="125"          
                                     y="265"          
                                     width="20"     
                                     height="40"     
                                     fill="brown" 
-                                    stroke="blue"   
-                                    stroke-width="2"
+                                    stroke="black"   
+                                    stroke-width="1"
                                     rx="15"          
                                     ry="0"/>
-
+                                    <polygon points="160,260 150,285 170,285" fill="blue" stroke="red" />
+                                    <circle cx="160" cy="260" r="6" fill="white" 
+                                        stroke="red"  stroke-width="1" 
+                                    />
+                                <rect 
+                                    x="45"          
+                                    y="280"          
+                                    width="180"     
+                                    height="25"     
+                                    fill="grey" 
+                                    stroke="brown"   
+                                    stroke-width="2"
+                                    rx="15"          
+                                    ry="15"          
+                                />
+                               
+                                
                                 <!--parte alta --> 
                                 <rect 
                                     x="45"          
                                     y="125"          
                                     width="180"     
                                     height="25"     
-                                    fill="lightblue" 
-                                    stroke="yellow"   
-                                    stroke-width="4"
+                                    fill="grey" 
+                                    stroke="brown"   
+                                    stroke-width="2"
                                     rx="15"          
                                     ry="15"          
                                 />
-                                <rect 
-                                    x="45"          
-                                    y="205"          
-                                    width="180"     
-                                    height="25"     
-                                    fill="green" 
-                                    stroke="pink"   
-                                    stroke-width="4"
-                                    rx="15"          
-                                    ry="15"          
-                                />
+                               
                                 <rect 
                                     x="185"          
                                     y="185"          
                                     width="20"     
                                     height="40"     
-                                    fill="blue" 
-                                    stroke="blue"   
-                                    stroke-width="2"
+                                    fill="brown" 
+                                    stroke="black"   
+                                    stroke-width="1"
                                     rx="15"          
                                     ry="0"/>
                                 <rect 
@@ -198,8 +197,8 @@
                                     width="20"     
                                     height="40"     
                                     fill="brown" 
-                                    stroke="blue"   
-                                    stroke-width="2"
+                                    stroke="black"   
+                                    stroke-width="1"
                                     rx="15"          
                                     ry="0"/>
                                 <rect 
@@ -208,11 +207,22 @@
                                     width="20"     
                                     height="40"     
                                     fill="brown" 
-                                    stroke="blue"   
-                                    stroke-width="2"
+                                    stroke="black"   
+                                    stroke-width="1"
                                     rx="15"          
                                     ry="0"
                                 />
+                                <rect 
+                                x="45"          
+                                y="205"          
+                                width="180"     
+                                height="25"     
+                                fill="grey" 
+                                stroke="brown"   
+                                stroke-width="2"
+                                rx="15"          
+                                ry="15"          
+                            />
                                 <path class="animated-path" d="M 165 255
                                     L 160 270"
                                     fill="red" 

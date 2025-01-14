@@ -1,0 +1,184 @@
+      <svg width="475" height="500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid meet">
+                                <rect 
+                                    x="50"          
+                                    y="125"          
+                                    width="170"     
+                                    height="250"     
+                                    fill="#D2B48C" 
+                                    stroke="black"   
+                                    stroke-width="2"    
+                                />
+                                <!--cupula con reloj-->
+                                <polygon points="80,125 90,105 80,90 135,60  190,90 180,105 190,125" 
+                                    fill="#D2B48C" 
+                                    stroke="black" 
+                                    stroke-width="1" 
+                                />
+                                <circle cx="135" cy="100" r="12" fill="white" 
+                                    stroke="black" stroke-width="1" 
+                                />
+                                <path d="M 135 90
+                                    L 135 100"
+                                    fill="black" 
+                                    stroke="black" 
+                                    stroke-width="1"
+                                />
+                                <path d="M 138 90
+                                    L 135 100"
+                                    fill="red" 
+                                    stroke="black" 
+                                    stroke-width="1" 
+                                />
+                                <!--parte inferior -->
+                                <path d="M 110 375 
+                                    C 110 335, 120 325, 135 325
+                                    C 155 325, 160 355, 160 375
+                                    Z"
+                                    fill="brown" 
+                                    stroke="black" 
+                                    stroke-width="2" 
+                                />
+                                    <rect 
+                                    x="65"          
+                                    y="335"          
+                                    width="20"     
+                                    height="40"     
+                                    fill="brown" 
+                                    stroke="black"   
+                                    stroke-width="1"
+                                    rx="15"          
+                                    ry="0"          
+                                    />
+                                    <rect 
+                                    x="185"          
+                                    y="335"          
+                                    width="20"     
+                                    height="40"     
+                                    fill="brown" 
+                                    stroke="black"   
+                                    stroke-width="1"
+                                    rx="15"          
+                                    ry="0"          
+                                    />
+                                    
+                                <!--parte media --> 
+                                
+                                <rect 
+                                    x="185"          
+                                    y="265"          
+                                    width="20"     
+                                    height="40"     
+                                    fill="brown" 
+                                    stroke="black"   
+                                    stroke-width="1"
+                                    rx="15"          
+                                    ry="0"/>
+                                <rect 
+                                    x="65"          
+                                    y="265"          
+                                    width="20"     
+                                    height="40"     
+                                    fill="brown" 
+                                    stroke="black"   
+                                    stroke-width="1"
+                                    rx="15"          
+                                    ry="0"/>
+                                <rect 
+                                    x="125"          
+                                    y="265"          
+                                    width="20"     
+                                    height="40"     
+                                    fill="brown" 
+                                    stroke="black"   
+                                    stroke-width="1"
+                                    rx="15"          
+                                    ry="0"/>
+                                    <polygon points="160,260 150,285 170,285" fill="blue" stroke="red" />
+                                    <circle cx="160" cy="260" r="6" fill="white" 
+                                        stroke="red"  stroke-width="1" 
+                                    />
+                                <rect 
+                                    x="45"          
+                                    y="280"          
+                                    width="180"     
+                                    height="25"     
+                                    fill="grey" 
+                                    stroke="brown"   
+                                    stroke-width="2"
+                                    rx="15"          
+                                    ry="15"          
+                                />
+                               
+                                
+                                <!--parte alta --> 
+                                <rect 
+                                    x="45"          
+                                    y="125"          
+                                    width="180"     
+                                    height="25"     
+                                    fill="grey" 
+                                    stroke="brown"   
+                                    stroke-width="2"
+                                    rx="15"          
+                                    ry="15"          
+                                />
+                               
+                                <rect 
+                                    x="185"          
+                                    y="185"          
+                                    width="20"     
+                                    height="40"     
+                                    fill="brown" 
+                                    stroke="black"   
+                                    stroke-width="1"
+                                    rx="15"          
+                                    ry="0"/>
+                                <rect 
+                                    x="65"          
+                                    y="185"          
+                                    width="20"     
+                                    height="40"     
+                                    fill="brown" 
+                                    stroke="black"   
+                                    stroke-width="1"
+                                    rx="15"          
+                                    ry="0"/>
+                                <rect 
+                                    x="125"          
+                                    y="185"          
+                                    width="20"     
+                                    height="40"     
+                                    fill="brown" 
+                                    stroke="black"   
+                                    stroke-width="1"
+                                    rx="15"          
+                                    ry="0"
+                                />
+                                <rect 
+                                x="45"          
+                                y="205"          
+                                width="180"     
+                                height="25"     
+                                fill="grey" 
+                                stroke="brown"   
+                                stroke-width="2"
+                                rx="15"          
+                                ry="15"          
+                            />
+                                <path class="animated-path" d="M 165 255
+                                    L 160 270"
+                                    fill="red" 
+                                    stroke="red" 
+                                    stroke-width="4" 
+                                />
+                                <circle class="explosion-circle" cx="260" cy="75" r="3" fill="red" style="--angle: 0deg;"></circle>
+                                <circle class="explosion-circle" cx="260" cy="75" r="3" fill="red" style="--angle: 36deg;"></circle>
+                                <circle class="explosion-circle" cx="260" cy="75" r="3" fill="red" style="--angle: 72deg;"></circle>
+                                <circle class="explosion-circle" cx="260" cy="75" r="3" fill="red" style="--angle: 108deg;"></circle>
+                                <circle class="explosion-circle" cx="260" cy="75" r="3" fill="red" style="--angle: 144deg;"></circle>
+                                <circle class="explosion-circle" cx="260" cy="75" r="3" fill="red" style="--angle: 180deg;"></circle>
+                                <circle class="explosion-circle" cx="260" cy="75" r="3" fill="red" style="--angle: 216deg;"></circle>
+                                <circle class="explosion-circle" cx="260" cy="75" r="3" fill="red" style="--angle: 252deg;"></circle>
+                                <circle class="explosion-circle" cx="260" cy="75" r="3" fill="red" style="--angle: 288deg;"></circle>
+                                <circle class="explosion-circle" cx="260" cy="75" r="3" fill="red" style="--angle: 324deg;"></circle>
+                            </svg>

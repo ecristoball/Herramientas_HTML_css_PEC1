@@ -6,7 +6,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "parcel:dev": "parcel",
-    "parcel:build": "parcel build",
+    "parcel:build": "parcel build --no-optimize",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",

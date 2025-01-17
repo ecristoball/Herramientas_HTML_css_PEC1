@@ -2,12 +2,30 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&family=Lato&family=Noto+Serif:wght@600&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>la ciudadela</title>
-        <link rel="stylesheet" href="./styles/styles.css">    
+        
+        <!-- Preconexión para mejorar la velocidad de carga de las fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <!-- Estilos críticos en línea para renderizar el h1 de inmediato -->
+        <style>
+            h1 {
+                font-size: 2.5rem;
+                text-align: center;
+                font-family: Arial, sans-serif; 
+            }
+        </style>
+    
+        
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&family=Lato&family=Noto+Serif:wght@600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&family=Lato&family=Noto+Serif:wght@600&display=swap">
+        </noscript>
+    
+        
+        <link rel="stylesheet" href="./styles/styles.css" media="print" onload="this.media='all'">
     </head>
 <body>
     <include src="./components/header.html"></include>
@@ -29,29 +47,29 @@
         <aside class="columna-lateral">
             <h2>Imágenes de la Ciudadela</h2>
             <figure>
-                <img src="./images/ciudadela.jpg" alt="Vista aérea de la ciudadela" loading="lazy">
+                <img src="./images/ciudadela.webp" alt="Vista aérea de la ciudadela" loading="lazy">
                 <figcaption>Vista aérea de la ciudadela</figcaption>
             </figure>
             <h2></h2>
             <p></p>
             <figure>
-                <img src="./images/ciudadelaHist1.png" alt="Cuerpo de Guardia en La Ciudadela" loading="lazy">
+                <img src="./images/ciudadelaHist1.webp" alt="Cuerpo de Guardia en La Ciudadela" loading="lazy">
                 <figcaption>Cuerpo de Guardia</figcaption>
             </figure>
             <figure>
-                <img src="./images/ciudadelaHist2.png" alt="Puerta del Socorro en la Ciudadela 1689" loading="lazy">
+                <img src="./images/ciudadelaHist2.webp" alt="Puerta del Socorro en la Ciudadela 1689" loading="lazy">
                 <figcaption>Puerta del Socorro </figcaption>
             </figure>
             <figure>
-                <img src="./images/ciudadela4.jpg" alt="Jardines de la Vuelta del Castillo"loading="lazy">
+                <img src="./images/ciudadela4.webp" alt="Jardines de la Vuelta del Castillo"loading="lazy">
                 <figcaption>Jardines de la Vuelta del Castillo</figcaption>
             </figure>
             <figure>
-                <img src="./images/ciudadela3.jpg" alt="Revelín del Norte" loading="lazy">
+                <img src="./images/ciudadela3.webp" alt="Revelín del Norte" loading="lazy">
                 <figcaption>Revelín del Norte</figcaption>
             </figure>
             <figure>
-                <img src="./images/ciudadela2.jpg" alt="La Glorieta de los fueros en la Ciudadela" loading="lazy">
+                <img src="./images/ciudadela2.webp" alt="La Glorieta de los fueros en la Ciudadela" loading="lazy">
                 <figcaption>La glorieta de los fueros</figcaption>
             </figure>
             

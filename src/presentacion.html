@@ -2,25 +2,32 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&family=Lato&family=Noto+Serif:wght@600&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Presentacion</title>
         
-        <!-- Estilos críticos dentro del head para renderizar el h1 de inmediato -->
+        <!-- Preconexión para mejorar la velocidad de carga de las fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <!-- Estilos críticos en línea para renderizar el h1 de inmediato -->
         <style>
             h1 {
                 font-size: 2.5rem;
                 text-align: center;
-                font-family: 'Fira Sans', Arial, sans-serif;
-                font-display: swap;
+                font-family: Arial, sans-serif; 
             }
         </style>
+    
         
-        <!-- Carga del archivo de estilos principal de manera normal -->
-        <link rel="stylesheet" href="./styles/styles.css" media="print" onload="this.media='all'">    
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&family=Lato&family=Noto+Serif:wght@600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&family=Lato&family=Noto+Serif:wght@600&display=swap">
+        </noscript>
+    
+        
+        <link rel="stylesheet" href="./styles/styles.css" media="print" onload="this.media='all'">
     </head>
+    
 
     <body>
         <include src="./components/header.html"></include>
